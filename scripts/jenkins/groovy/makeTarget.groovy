@@ -106,6 +106,7 @@ private void execMake(final String buildAction, final String h2o3dir) {
     printenv | sort
     ${buildAction}
   """
+  sh 'find * -name results | xargs ls -laR'
 }
 
 return this
